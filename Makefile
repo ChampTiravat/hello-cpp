@@ -1,2 +1,2 @@
 build:
-	g++ -std=c++11 one.cpp
+	g++ -std=c++11 *.cpp
