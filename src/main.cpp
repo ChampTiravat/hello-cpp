@@ -1,22 +1,16 @@
-#include <iostream> // allow us to use count and more 
-#include <vector> // arrays
+#include <iostream>
+#include <vector>
 #include <string> 
-#include <fstream> // file io
+#include <fstream>
 
-using namespace std;
-
-
+//using namespace std;
 
 int main() {
-  
-  int a = 10;
 
-  cout << a << endl;
+  std::cout << "Hello" << std::endl;
 
   return 0;
 }
-
-
 
 int test() {
 
@@ -91,5 +85,5 @@ int test() {
   }
   */
 
-  return 0;
+//  return 0;
 }
