@@ -8,10 +8,10 @@ int main()
 {
   Animal puf_the_dog("puf");
   Animal hoof_the_dog;
-  Cat pop_the_cat;
+  Cat pop_the_cat("pop");
 
   hoof_the_dog.set_name("hoof");
-  pop_the_cat.set_name("pop");
+  //pop_the_cat.set_name("pop");
   pop_the_cat.set_sound("meow");
 
   cout << puf_the_dog.get_name() << endl;

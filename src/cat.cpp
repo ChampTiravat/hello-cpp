@@ -4,10 +4,23 @@
 
 using namespace std;
 
-string Cat::get_sound() {
+Cat::Cat(string name)
+   : Animal(name) 
+   {
+     cout << "Cat constructor" << endl;
+   }
+
+Cat::~Cat()
+{
+  cout << "Cat removed" << endl;
+}
+
+string Cat::get_sound()
+{
   return this -> sound;
 }
 
-void Cat::set_sound(string sound) {
+void Cat::set_sound(string sound)
+{
   this -> sound = sound;
 }
