@@ -4,11 +4,10 @@
 
 using namespace std;
 
-Cat::Cat(string name)
-   : Animal(name) 
-   {
-     cout << "Cat constructor" << endl;
-   }
+Cat::Cat(string name) : Animal(name)
+{
+  cout << "Cat constructor" << endl;
+}
 
 Cat::~Cat()
 {
@@ -17,10 +16,10 @@ Cat::~Cat()
 
 string Cat::get_sound()
 {
-  return this -> sound;
+  return this->sound;
 }
 
 void Cat::set_sound(string sound)
 {
-  this -> sound = sound;
+  this->sound = sound;
 }
