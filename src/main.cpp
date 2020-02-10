@@ -1,23 +1,30 @@
 #include <iostream>
-#include "headers/animal.h"
-#include "headers/cat.h"
 
-using namespace std;
-
-int main()
+class Animal
 {
-  Animal puf_the_dog("puf");
-  Animal hoof_the_dog;
-  Cat pop_the_cat("pop");
+private:
+  char* name;
 
-  hoof_the_dog.set_name("hoof");
-  //pop_the_cat.set_name("pop");
-  pop_the_cat.set_sound("meow");
+public:
+  Animal(char* n);
+  char* getName();
+};
 
-  cout << puf_the_dog.get_name() << endl;
-  cout << hoof_the_dog.get_name() << endl;
-  cout << pop_the_cat.get_name() << endl;
-  cout << pop_the_cat.get_sound() << endl;
+Animal::Animal(char* n) {
+  this->name = n;
+}
+
+char* Animal::getName() {
+  return this->name;
+}
+
+int main() {
+  using namespace std;
+
+  char* name = "puffy";
+  Animal dog(name);
+
+  cout << "Hello, " << dog.getName() << "\n" << endl;
 
   return 0;
 }
