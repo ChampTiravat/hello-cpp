@@ -6,6 +6,12 @@ build:
 	mkdir dist
 	g++ -std=c++11 ./src/*.cpp -o ./dist/app
 
+dev:
+	rm -rf ./dist
+	mkdir dist
+	g++ -std=c++11 ./src/*.cpp -o ./dist/app
+	./dist/app
+
 build-gcc:
 	rm -rf ./dist
 	mkdir dist
