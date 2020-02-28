@@ -2,7 +2,7 @@
 #include <string>
 
 
-
+// This is an entry point of our app
 int main() {
 
   using namespace std;
